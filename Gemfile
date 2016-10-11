@@ -11,7 +11,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'faraday'
 gem 'figaro'
-gem 'omniauth-oauth2'
+gem 'omniauth-github', '1.1.1'
 
 group :development, :test do
   gem 'byebug', platform: :mri
