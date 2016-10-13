@@ -24,6 +24,3 @@ class GithubService
     JSON.parse(response.body, symbolize_names: true)
   end
 end
-
-#idea on how to approach this issue.
-#pass current_user to each class (ex. user, repos, etc... and have them parsed out in the model)

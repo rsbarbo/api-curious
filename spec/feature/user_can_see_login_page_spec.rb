@@ -1,16 +1,15 @@
-
 require 'rails_helper'
 
-  RSpec.feature "User can see login page" do
-    scenario "when user enter address to website, it sees a login page" do
-      
+RSpec.feature "User can see login page" do
+  it "logins with credentials" do
+    visit root_path
+    stub_omniauth
 
-      visit root_path
-      stub_omniauth
-
-      expect(page).to have_link("Sign In with GitHub")
-      click_on "Sign In with GitHub"
-      #what page are you on
-      #and content expected
+    within 'header' do
+      expect(page).to have_content("Sign in")
     end
+
+    click_on 'Sign in'
+    save_and_open_page
   end
+end
