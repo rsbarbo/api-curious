@@ -13,6 +13,11 @@ gem 'faraday'
 gem 'figaro'
 gem 'omniauth-github', '1.1.1'
 
+group :test do
+  gem 'vcr'
+  gem 'webmock'
+end
+
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry-rails'
