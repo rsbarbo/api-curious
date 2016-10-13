@@ -10,6 +10,8 @@ RSpec.feature "User can see login page" do
     end
 
     click_on 'Sign in'
-    save_and_open_page
+    expect(current_path).to have_content('/dashboard/')
+    expect(page).to have_content('Your repositories')
+    expect(page).to have_link('active-record-exploration')
   end
 end
