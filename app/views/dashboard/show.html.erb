@@ -216,7 +216,7 @@
                     <a href="/new" class="btn btn-sm btn-primary" data-ga-click="Dashboard, click, Sidebar header new repo button - context:user">
                       New repository
                     </a>          </div>
-                    <h3>Your repositories <span class="counter">54</span></h3>
+                    <h3>Your repositories <span class="counter"><%=@github_user.all_repos.count  %></span></h3>
                     <div class="boxed-group-inner">
                       <div class="filter-repos filter-bar" role="search">
                         <input type="text" id="your-repos-filter" class="form-control input-sm input-block js-filterable-field" placeholder="Find a repository…" aria-label="Find a repository…" tabindex="2">
@@ -240,10 +240,6 @@
                         </li>
                         <% end %>
                       </ul>
-
-                      <div class="more-repos">
-                        <a href="/dashboard/ajax_your_repos" class="more-repos-link js-more-repos-link" data-ga-click="Dashboard, click, Ajax more repos link - context:user">Show 34 more repositories…</a>
-                      </div>
                     </div>
                   </div>
                 </div><!-- /sidebar -->
