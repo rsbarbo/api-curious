@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/auth/:provider/callback', to: 'sessions#create'
 
   resources :dashboard, only: [:show], as: 'show_page'
+  resources :users, only: [:show], as: 'user_profile'
 end
