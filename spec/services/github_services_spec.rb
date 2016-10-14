@@ -19,7 +19,7 @@ describe "GithubService" do
         expect(repo[:full_name]).to eq("rsbarbo/active-record-exploration")
       end
     end
-
+    
     it "it returns profile info" do
       VCR.use_cassette("github_service.profile_info") do
 

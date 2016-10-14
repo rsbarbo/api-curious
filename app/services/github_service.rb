@@ -1,5 +1,4 @@
 class GithubService
-
   def initialize(user)
     @user_token = user.token
     @user_nickname = user.nickname

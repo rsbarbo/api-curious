@@ -9,6 +9,12 @@ class GithubUser
     @service.get_profile_info
   end
 
+  def all_repos
+    @service.get_all_repos.map do |raw_repo|
+      Repo.new(raw_repo)
+    end
+  end
+
   def avatar
     profile_info[:avatar_url]
   end
@@ -45,14 +51,8 @@ class GithubUser
   end
 
   def dates
-   dates = {created_at: profile_info[:created_at],
-    updated_at: profile_info[:updated_at]}
+    dates = {created_at: profile_info[:created_at],
+      updated_at: profile_info[:updated_at]}
     return dates
-  end
-
-  def all_repos
-    @service.get_all_repos.map do |raw_repo|
-      Repo.new(raw_repo)
-    end
   end
 end
