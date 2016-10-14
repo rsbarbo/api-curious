@@ -1,24 +1,8 @@
-# README
+# API-CURIOUS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+API-Curious was my attempt to replicate GitHub website from a user perspective. The application allows users to login (including authenticating their information), as well as have access to their repositories, and profile information. I was able to accomplish this task by consuming GitHub's API.
 
-Things you may want to cover:
+Please fee free to visit the live app at http://api-curious-github.herokuapp.com/
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Ruby Version: ruby 2.3.1p112
+- Rails Version: Rails 5.0.0.1
