@@ -8,7 +8,7 @@ API-Curious was my attempt to replicate GitHub website from a user perspective. 
 - Click and access repositories
 - Click on the picture and go to "Your Profile page"
 
-Please fee free to visit the live app at http://api-curious-github.herokuapp.com/
+Please fee free to visit the live app at https://api-curious-github.herokuapp.com/
 
 - Ruby Version: ruby 2.3.1p112
 - Rails Version: Rails 5.0.0.1
